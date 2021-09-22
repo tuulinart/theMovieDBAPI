@@ -1,0 +1,69 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      First App
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">First App</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-searchbar placeholder="Buscar">
+  </ion-searchbar>
+  <ion-list lines="full">
+    <ion-item-sliding>
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="https://www.themoviedb.org/t/p/w300_and_h450_bestv2/2xtqkht2u7SkrZPd6zyMRymE4nt.jpg">
+      </ion-thumbnail>
+      <ion-label class="ion-text-wrap">
+        <div>
+          <h1>Eu Acredito (2017)</h1>
+          <p>06/06/2019 (BR) 1h 29m</p>
+          <p>Família</p>
+        </div>
+      </ion-label>
+      <ion-chip outline color="success">
+        <ion-label>
+          70%</ion-label>
+      </ion-chip>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option color='orange' (click)="showFavAlert()">
+        <ion-icon slot="icon-only" name="star" color='light'>
+        </ion-icon>
+      </ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+
+  <ion-item-sliding>
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/mLvjQ0IIdzZfQzQXULI7sIVxd8V.jpg">
+      </ion-thumbnail>
+      <ion-label class="ion-text-wrap">
+        <div>
+          <h1>Infinito (2021)</h1>
+          <p>10/06/2021 (FR) 1h 46m</p>
+          <p>Ficção científica, Ação, Thriller</p>
+        </div>
+      </ion-label>
+      <ion-chip outline color="success">
+        <ion-label>
+          75%</ion-label>
+      </ion-chip>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option color='orange' (click)="showFavAlert()">
+        <ion-icon slot="icon-only" name="star" color='light'>
+        </ion-icon>
+      </ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+  </ion-list>
+
+</ion-content>
